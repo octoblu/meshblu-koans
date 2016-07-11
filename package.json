@@ -8,11 +8,7 @@
   "license": "MIT",
   "bin": "./meshblu-workshopper.js",
   "dependencies": {
-    "bl": "^1.1.2",
-    "hapi": "^13.5.0",
-    "hyperquest": "^2.0.0",
     "path": "^0.12.7",
-    "through2": "^2.0.1",
     "workshopper": "^2.7.0",
     "workshopper-exercise": "^2.7.0"
   }
