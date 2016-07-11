@@ -6,8 +6,8 @@ var exec = require('child_process').exec
 // to pull; if there is they haven't pulled yet
 
 exec('meshblu-util subscribe ./meshblu.json', function(err, stdout, stdrr) {
-  if (err) return console.log("Error, unexpected response.")
+  if (err) return console.log("No meshblu.json found!")
   var status = stdout.trim()
-  if (!err && status === "") console.log("Up to date!")
+  if (!err && status === "") console.log("Subscribed!")
   else console.log('status: ', status)
 })
