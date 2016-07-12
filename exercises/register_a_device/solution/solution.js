@@ -7,3 +7,6 @@ axios.post('https://meshblu.octoblu.com/devices', {
   .then(function (response) {
     console.log(response.data.type, response.data.color)
   })
+  .catch(function (response) {
+    console.log(response)
+  })

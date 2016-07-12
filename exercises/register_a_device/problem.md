@@ -1,6 +1,6 @@
 Create a new file called **program.js**
 
-**Register** a new device with Meshblu, containing the following properties:
+Then **Register** a new device with Meshblu, containing the following properties:
 ```
 type: drone
 color: black
