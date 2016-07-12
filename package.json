@@ -6,7 +6,7 @@
     "url": "git://github.com/octoblu/meshblu-koans"
   },
   "license": "MIT",
-  "bin": "./meshblu-workshopper.js",
+  "bin": "./meshblu-koans.js",
   "dependencies": {
     "path": "^0.12.7",
     "workshopper": "^2.7.0",

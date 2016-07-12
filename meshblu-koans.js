@@ -8,8 +8,8 @@ function fpath (f) {
 }
 
 workshopper({
-    name        : 'meshblu-workshopper',
-    title       : 'Meshblu Workshopper',
+    name        : 'meshblu-koans',
+    title       : 'Meshblu Koans',
     subtitle    : 'Learn how to use meshblu!',
     appDir      : __dirname,
     menuItems   : [],
