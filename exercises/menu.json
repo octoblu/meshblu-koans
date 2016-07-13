@@ -1,4 +1,11 @@
 [
   "Register a Device",
-  "Update a Device"
+  "Update a Device",
+  "Delete a Device",
+  "Who Am I",
+  "Subscribe to Device",
+  "Send a Message",
+  "My Devices",
+  "Create Session Token",
+  "Delete Session Token"
 ]
