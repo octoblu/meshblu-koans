@@ -1,5 +1,6 @@
 [
   "Register a Device",
+  "Get a Device",
   "Update a Device",
   "Delete a Device",
   "Who Am I",
