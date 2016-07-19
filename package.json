@@ -9,6 +9,7 @@
   "bin": "./meshblu-koans.js",
   "dependencies": {
     "axios": "^0.12.0",
+    "meshblu-http": "^7.0.0",
     "path": "^0.12.7",
     "workshopper": "^2.7.0",
     "workshopper-exercise": "^2.7.0"

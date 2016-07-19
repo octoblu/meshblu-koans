@@ -1,30 +1,14 @@
-1) Create a new file called **program.js**, then **Register** a new V2 device with Meshblu, containing the additional properties:
+1) Create a new file called **program.js**, then **Register** a new device with Meshblu
+
+2) Your device should contain the additional properties:
 ```
 "type": "drone"
 "color": "black"
 ```
-2) Also set **039accc2-eccb-4840-95a6-9511763f3d81** as the owner
 
-3) Once you have made the request, **console.log response.data.owner**, **response.data.type**, and **response.data.color** in order to verify that you added the properties to the device
+3) In the callback, **console.log response.type** and **response.color**
 
 # Hints
-To **register a new device** with Meshblu, you need to POST to: `https://meshblu.octoblu.com/devices`
-
-To set an owner and make your device V2, add the following properties:
-```
-"owner": owner_uuid,
-"name": "test",
-"meshblu": {
-  "version": "2.0.0",
-  "whitelists": {
-    "discover": {
-      "view": [{"uuid": owner_uuid}]
-    },
-    "configure": {
-      "update": [{"uuid": owner_uuid}]
-    }
-  }
-}
-```
-
-When you create a new device you can **add any properties** you want by **including them in the data** of your request
+- You should install/require meshblu-http and create a new meshblu-http instance, with no params
+- You can then call register() on your meshblu-http instance
+- register() takes two params, device properties(object) and a function(error, response)
