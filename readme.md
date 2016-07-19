@@ -6,7 +6,6 @@ This is a node project with simple lessons to help you learn more about Meshblu 
 - [x] Get a Device
 - [x] Update a Device
 - [x] Unregister a Device
-- [ ] Subscribe to Device
 - [ ] Send a Message
 - [ ] My Devices
 - [ ] Create Session Token
