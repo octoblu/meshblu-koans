@@ -1,5 +1,5 @@
 # Meshblu Koans
-This is a node project with simple lessons to help you learn more about Meshblu and guide you on your journey to machine to machine messaging enlightenment!
+meshblu-koans is a collection of simple lessons to help you learn more about Meshblu. Start your journey to machine-to-machine instant-messaging enlightenment!
 
 ## Lessons
 - [x] Register a Device
