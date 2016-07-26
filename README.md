@@ -11,6 +11,6 @@ meshblu-koans is a collection of simple lessons to help you learn more about Mes
 - [x] Revoke Token
 - [x] Generate Token
 - [ ] Send a Message
-- [ ] Search for Device
+- [x] Search for Device
 - [ ] Create Subscription
 - [ ] Delete Subscription
