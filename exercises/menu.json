@@ -6,5 +6,9 @@
   "My Devices",
   "Reset Token",
   "Revoke Token",
-  "Send a Message"
+  "Generate Token",
+  "Send a Message",
+  "Search for Device",
+  "Create Subscription",
+  "Delete Subscription"
 ]

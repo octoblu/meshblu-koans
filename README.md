@@ -9,4 +9,8 @@ meshblu-koans is a collection of simple lessons to help you learn more about Mes
 - [x] My Devices
 - [x] Reset Token
 - [x] Revoke Token
+- [ ] Generate Token
 - [ ] Send a Message
+- [ ] Search for Device
+- [ ] Create Subscription
+- [ ] Delete Subscription
