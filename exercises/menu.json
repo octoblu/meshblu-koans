@@ -3,8 +3,8 @@
   "Get a Device",
   "Update a Device",
   "Unregister a Device",
-  "Send a Message",
   "My Devices",
-  "Create Session Token",
-  "Delete Session Token"
+  "Reset Token",
+  "Revoke Token",
+  "Send a Message"
 ]
