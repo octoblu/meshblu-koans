@@ -8,5 +8,5 @@ meshblu-koans is a collection of simple lessons to help you learn more about Mes
 - [x] Unregister a Device
 - [x] My Devices
 - [x] Reset Token
-- [ ] Revoke Token
+- [x] Revoke Token
 - [ ] Send a Message
