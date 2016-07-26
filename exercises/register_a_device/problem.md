@@ -1,6 +1,6 @@
 1) Create a new file called **program.js**
 
-2) **Register** a new device with Meshblu
+2) **register()** a new device with Meshblu
 
 3) Your device should contain the additional properties:
 ```
