@@ -15,4 +15,4 @@
 
 -- You can then call register() on your meshblu-http instance
 
--- register() takes two params, device properties(object) and a callback function(error, response)
+-- register() takes two params: an object with device properties and a callback function(error, response)
