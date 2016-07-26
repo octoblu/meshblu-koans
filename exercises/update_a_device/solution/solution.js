@@ -8,7 +8,8 @@ device.register({}, function(error, response) {
   newDevice.update(response.uuid, {type: "beacon", color: "green"}, function(error, response) {
 
     newDevice.whoami(function(error, response) {
-      console.log(response.type, response.color)
+      console.log(response.hasOwnProperty("type"))
+      console.log(response.hasOwnProperty("color"))
     })
   })
 })

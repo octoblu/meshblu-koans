@@ -7,7 +7,7 @@
 
 3) Then **get** your device with **whoami()**
 
-4) In the callback, **console.log response.type**
+4) In the callback, **console.log response.hasOwnProperty("type")**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params

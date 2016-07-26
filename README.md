@@ -3,7 +3,7 @@ meshblu-koans is a collection of simple lessons to help you learn more about Mes
 
 ## Lessons
 - [x] Register a Device
-- [x] Get a Device
+- [x] Get Current Device
 - [x] Update a Device
 - [x] Unregister a Device
 - [x] My Devices
