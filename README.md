@@ -2,15 +2,15 @@
 meshblu-koans is a collection of simple lessons to help you learn more about Meshblu. Start your journey to machine-to-machine instant-messaging enlightenment!
 
 ## Lessons
-- [x] Register a Device
-- [x] Get Current Device
-- [x] Update a Device
-- [x] Unregister a Device
-- [x] My Devices
-- [x] Reset Token
-- [x] Revoke Token
-- [x] Generate Token
+- [X] Register a Device
+- [X] Get Current Device
+- [X] Update a Device
+- [X] Unregister a Device
+- [X] My Devices
+- [X] Reset Token
+- [X] Revoke Token
+- [X] Generate Token
 - [ ] Send a Message
-- [x] Search for Device
+- [X] Search for Device
 - [ ] Create Subscription
 - [ ] Delete Subscription

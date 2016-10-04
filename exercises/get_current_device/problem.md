@@ -12,6 +12,6 @@
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params
 
--- After you register a new device, you should create a new meshblu-http instance, with an object containing the uuid and token
+-- After you register a new device, you should create a new meshblu-http instance, with an object containing the response uuid and token
 
 -- whoami() has one param: a callback function(error, response)
