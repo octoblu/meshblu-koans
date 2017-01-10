@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '5'
+
+deploy:
+  provider: npm
+  email: serveradmin@octoblu.com
+  api_key:
+    secure: IaWA/Y2hEF4LxQ5DZM++XMJuju5Vmcw1INUUul5cYBpPJiTdoNKWVSP5XF3zNwEW1wj+PAKpcJF9rKqGxocuI+eBYtDnsXuQKvt7uhFUZ0ATiRQE/MOLdoLOAhEyBGiFBNHhRDP3Dcgzz0FrDfnkkVsFsxSWfZOgWlcGdWmXMQc+O7dicN0/CFCcKdfv2F3SmoqBPi/09J3y1EfAq3sy7ueU45rR9N0lqLo3yShNp6tRlcDRWeEdlQ6MLhb2cSocNcHS+mrjuDWVWcEKygw8mu3K5AoLAKKuUWAOd4voBdxksu88uxyLslxNyzO/oHiE3MoGceO3HwLjbIn30pqXYcNNf+N/sufMZUJ96Lt22ZZ9Xqny/6myE1yu6pysAtDb7raziznpY96RzMvbSGg9hUnANyC4g4k8rGxrOsrqhv9TCOJLvK4Ae3ObVjeMA7DjT5b6HAkmZOa9VptVdKhIZi5TJUUtCmybADs2+lVXc705PFEWwVa4kfsqhLURrEUAZjehvv+OfAIl+CUPp/XSMUCbxpkhYv/2tohORBvDQ3INLFDjgtCSJzr1Zr0pwJuQq2fyJeFvFueLxVP4I5pkf42Fvw+XTDec8kijGYii5Yez29whn9C63fTJaHn9i09GHCUwSnnul2nOse0taTZMOSqK4oLnp54HToO1sxXRcDY=
+  on:
+    tags: true
+    branches: true
