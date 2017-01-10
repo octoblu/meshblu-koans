@@ -8,7 +8,7 @@
 "color": "black"
 ```
 
-4) In the callback, **console.log response.hasOwnProperty("type")** and **response.hasOwnProperty("color")**
+4) In the callback, **console.log response.type** and **response.color**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params

@@ -8,8 +8,8 @@ meshbluHttp.register({}, function(error, response) {
   device.update(response.uuid, {type: "beacon", color: "green"}, function(error, response) {
 
     device.whoami(function(error, response) {
-      console.log(response.hasOwnProperty("type"))
-      console.log(response.hasOwnProperty("color"))
+      console.log(response.type)
+      console.log(response.color)
     })
   })
 })

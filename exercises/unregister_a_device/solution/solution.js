@@ -7,5 +7,6 @@ meshbluHttp.register({}, function(error, response) {
 
   device.unregister(response, function(error, response) {
     console.log(error)
+    console.log(response.hasOwnProperty("uuid"))
   })
 })
