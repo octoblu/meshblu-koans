@@ -1,10 +1,7 @@
 # Meshblu Koans
 meshblu-koans is a collection of simple lessons to help you learn more about Meshblu. Start your journey to machine-to-machine instant-messaging enlightenment!
 
-## Todo
-- [ ] Make available via NPM
-
-#### Lessons
+## Lessons
 - [X] Register a Device
 - [X] Get Current Device
 - [X] Update a Device
@@ -13,13 +10,12 @@ meshblu-koans is a collection of simple lessons to help you learn more about Mes
 - [X] Reset Token
 - [X] Revoke Token
 - [X] Generate Token
-- [ ] Send a Message
-  - [ ] Directions
-  - [x] Solution
 - [X] Search for Device
-- [ ] Create Subscription
+- [ ] Get Subscriptions
   - [ ] Directions
-  - [x] Solution
-- [ ] Delete Subscription
+  - [ ] Solutions
+- [x] Create Subscription
+- [x] Delete Subscription
+- [ ] Send a Message
   - [ ] Directions
   - [x] Solution
