@@ -3,7 +3,9 @@ meshblu-koans is a collection of simple lessons to help you learn more about Mes
 
 ## Todo
 - [ ] Clean-up code
+
 #### Lessons
+
 - [X] Register a Device
 - [X] Get Current Device
 - [X] Update a Device
