@@ -3,11 +3,10 @@ var MeshbluFirehose = require('meshblu-firehose-socket.io')
 
 var meshbluHttp = new MeshbluHttp()
 
-meshbluHttp.register({name: 'firehose-test:receiver'}, function(error, receiver) {
+meshbluHttp.register({}, function(error, receiver) {
   var receiverDevice = new MeshbluHttp({uuid: receiver.uuid, token: receiver.token})
 
   var registerSender = {
-    name: 'firehose-test:sender',
     meshblu: {
       version: '2.0.0',
       whitelists: {
@@ -19,12 +18,20 @@ meshbluHttp.register({name: 'firehose-test:receiver'}, function(error, receiver)
   }
 
   meshbluHttp.register(registerSender, function(error, sender) {
-    var broadcastReceivedSubscription = {emitterUuid: receiver.uuid, subscriberUuid: receiver.uuid, type: 'broadcast.received'}
+    var broadcastReceivedSubscription = {
+      emitterUuid: receiver.uuid,
+      subscriberUuid: receiver.uuid,
+      type: 'broadcast.received'
+    }
 
     receiverDevice.createSubscription(broadcastReceivedSubscription, function(error) {
       console.log("Receive subscription created")
 
-      var broadcastSentSubscription = {emitterUuid: sender.uuid, subscriberUuid: receiver.uuid, type: 'broadcast.sent'}
+      var broadcastSentSubscription = {
+        emitterUuid: sender.uuid,
+        subscriberUuid: receiver.uuid,
+        type: 'broadcast.sent'
+      }
 
       receiverDevice.createSubscription(broadcastSentSubscription, function(error) {
         console.log("Sent subscription created")
@@ -50,7 +57,7 @@ meshbluHttp.register({name: 'firehose-test:receiver'}, function(error, receiver)
 
           var senderDevice = new MeshbluHttp({uuid: sender.uuid, token: sender.token})
 
-          senderDevice.message({devices: ['*'], payload: "Hello World"});
+          senderDevice.message({devices: ['*'], payload: "Hello World"})
         })
       })
     })
