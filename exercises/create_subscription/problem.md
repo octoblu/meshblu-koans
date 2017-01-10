@@ -1,6 +1,6 @@
 1) Create a new file called **program.js**
 
-2) **register()** a new device with Meshblu, containing the property:
+2) **register()** a new device with Meshblu
 
 3) Create a new object, containing the options for the subscription:
 ```

@@ -8,6 +8,7 @@
   "Revoke Token",
   "Generate Token",
   "Search for Device",
+  "Get Subscriptions",
   "Create Subscription",
   "Delete Subscription",
   "Send a Message"
