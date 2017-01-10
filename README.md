@@ -16,12 +16,12 @@ meshblu-koans is a collection of simple lessons to help you learn more about Mes
 - [X] Revoke Token
 - [X] Generate Token
 - [ ] Send a Message
-  - [x] Solution
   - [ ] Directions
+  - [x] Solution
 - [X] Search for Device
 - [ ] Create Subscription
   - [ ] Directions
-  - [ ] Solution
+  - [x] Solution
 - [ ] Delete Subscription
   - [ ] Directions
-  - [ ] Solution
+  - [x] Solution

@@ -4,7 +4,7 @@ var MeshbluFirehose = require('meshblu-firehose-socket.io')
 var meshbluHttp = new MeshbluHttp()
 
 meshbluHttp.register({name: 'firehose-test:receiver'}, function(error, receiver) {
-  var receiverDevice = new MeshbluHttp({uuid: receiver.uuid, token: receiver.token});
+  var receiverDevice = new MeshbluHttp({uuid: receiver.uuid, token: receiver.token})
 
   var registerSender = {
     name: 'firehose-test:sender',
