@@ -1,11 +1,12 @@
 {
   "name": "meshblu-koans",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/octoblu/meshblu-koans"
   },
   "license": "MIT",
+  "author": "octoblu",
   "bin": "./meshblu-koans.js",
   "dependencies": {
     "meshblu": "^2.0.2",
