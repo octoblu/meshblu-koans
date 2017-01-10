@@ -1,8 +1,8 @@
-var meshbluHttp = require('meshblu-http')
+var MeshbluHttp = require('meshblu-http')
 
-var newDevice = new meshbluHttp()
+var meshbluHttp = new MeshbluHttp()
 
-newDevice.register({type: "drone", color: "black"}, function(error, response) {
+meshbluHttp.register({type: "drone", color: "black"}, function(error, response) {
   console.log(response.hasOwnProperty("type"))
   console.log(response.hasOwnProperty("color"))
 })

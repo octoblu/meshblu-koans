@@ -1,11 +1,11 @@
-var meshbluHttp = require('meshblu-http')
+var MeshbluHttp = require('meshblu-http')
 
-var device = new meshbluHttp()
+var meshbluHttp = new MeshbluHttp()
 
-device.register({}, function(error, response) {
-  var newDevice = new meshbluHttp({uuid: response.uuid, token: response.token})
+meshbluHttp.register({}, function(error, response) {
+  var device = new MeshbluHttp({uuid: response.uuid, token: response.token})
 
-  newDevice.mydevices({}, function(error, response) {
+  device.mydevices({}, function(error, response) {
     console.log(response)
   })
 })

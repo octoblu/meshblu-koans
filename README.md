@@ -2,7 +2,8 @@
 meshblu-koans is a collection of simple lessons to help you learn more about Meshblu. Start your journey to machine-to-machine instant-messaging enlightenment!
 
 ## Todo
-- [ ] Clean-up code
+- [ ] Better way to verify solutions
+  - [ ] Update solutions
 - [ ] Make available via NPM
 
 #### Lessons

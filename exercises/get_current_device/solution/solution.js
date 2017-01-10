@@ -1,11 +1,11 @@
-var meshbluHttp = require('meshblu-http')
+var MeshbluHttp = require('meshblu-http')
 
-var device = new meshbluHttp()
+var meshbluHttp = new MeshbluHttp()
 
-device.register({type: "awesome-device"}, function(error, response) {
-  var newDevice = new meshbluHttp({uuid: response.uuid, token: response.token})
+meshbluHttp.register({type: "awesome-device"}, function(error, response) {
+  var device = new MeshbluHttp({uuid: response.uuid, token: response.token})
 
-  newDevice.whoami(function(error, response) {
+  device.whoami(function(error, response) {
     console.log(response.hasOwnProperty("type"))
   })
 })

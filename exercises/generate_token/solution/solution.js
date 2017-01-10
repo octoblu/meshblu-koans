@@ -1,13 +1,15 @@
-var meshbluHttp = require('meshblu-http')
+var MeshbluHttp = require('meshblu-http')
 
-var device = new meshbluHttp()
+var meshbluHttp = new MeshbluHttp()
 
-device.register({}, function(error, response) {
-  var newDevice = new meshbluHttp({uuid: response.uuid, token: response.token})
+meshbluHttp.register({}, function(error, response) {
+  var uuid = response.uuid
 
-  newDevice.revokeToken(response.uuid, response.token, function(error, response) {
+  var device = new MeshbluHttp({uuid: uuid, token: response.token})
 
-    newDevice.generateAndStoreToken(uuid, function(error, response) {
+  device.revokeToken(uuid, response.token, function(error, response) {
+
+    device.generateAndStoreToken(uuid, function(error, response) {
       console.log(response.hasOwnProperty("uuid"))
       console.log(response.hasOwnProperty("token"))
       console.log(response.hasOwnProperty("createdAt"))
