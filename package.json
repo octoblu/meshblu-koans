@@ -9,6 +9,7 @@
   "bin": "./meshblu-koans.js",
   "dependencies": {
     "meshblu": "^2.0.2",
+    "meshblu-firehose-socket.io": "^2.0.11",
     "meshblu-http": "^7.0.0",
     "path": "^0.12.7",
     "workshopper": "^2.7.0",
