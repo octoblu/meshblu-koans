@@ -3,6 +3,7 @@ meshblu-koans is a collection of simple lessons to help you learn more about Mes
 
 ## Todo
 - [ ] Clean-up code
+- [ ] Make available via NPM
 
 #### Lessons
 
