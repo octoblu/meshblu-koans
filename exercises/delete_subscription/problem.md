@@ -1,4 +1,4 @@
-1) Create a new file called **program.js**
+1) Create a new file called **program.js**, then install/require 'meshblu-http'
 
 2) **register()** a new device with Meshblu
 
