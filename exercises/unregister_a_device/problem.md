@@ -4,7 +4,7 @@
 
 3) Then **delete** your device by calling **unregister()**
 
-4) In the callback, **console.log error** and **response.hasOwnProperty("uuid")**
+4) In the callback, **console.log(error)** and **console.log(response.hasOwnProperty("uuid"))**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params

@@ -4,7 +4,7 @@
 
 3) Reset the token of your device with **resetToken()**
 
-4) In the callback, **console.log response.hasOwnProperty("uuid")** and **response.hasOwnProperty("token")**
+4) In the callback, **console.log(response.hasOwnProperty("uuid"))** and **console.log(response.hasOwnProperty("token"))**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params

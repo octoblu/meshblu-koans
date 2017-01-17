@@ -4,7 +4,7 @@
 
 3) Revoke the token of your device with **revokeToken()**
 
-4) In the callback, **console.log error** and **response**
+4) In the callback, **console.log(error)** and **console.log(response)**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params

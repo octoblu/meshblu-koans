@@ -31,7 +31,7 @@ var broadcastReceivedSubscription = {
 
 7) **createSubscription()** with the options object above
 
-8) **console.log "Receive subscription created"** and then create a new object:
+8) **console.log("Receive subscription created")** and then create a new object:
 ```
 var broadcastSentSubscription = {
   emitterUuid: sender.uuid,
@@ -42,7 +42,7 @@ var broadcastSentSubscription = {
 
 9) **createSubscription()** with the options object above
 
-10) **console.log "Sent subscription created"** then create a new instance of Meshblu Firehose:
+10) **console.log("Sent subscription created")** then create a new instance of Meshblu Firehose:
 ```
 var meshbluFirehose = new MeshbluFirehose({
   meshbluConfig: {
@@ -55,11 +55,11 @@ var meshbluFirehose = new MeshbluFirehose({
 })
 ```
 
-11) Now you can set **meshbluFirehose.on('message', function(message))** to contain **console.log "Received a message: " + message.data.payload** and **meshbluFirehose.close(function(error){})** as part of the callback
+11) Now you can set **meshbluFirehose.on('message', function(message))** to contain **console.log("Received a message: " + message.data.payload)** and **meshbluFirehose.close(function(error){})** as part of the callback
 
 12) Finally, we can call **meshbluFirehose.connect()** with a callback **function(error)**
 
-13) In the callback, **console.log "Connected"**, **register()** the sender device by calling **new MeshbluHttp({uuid: sender.uuid, token: sender.token})**, and send a message from the sender device, as follows:
+13) In the callback, **console.log("Connected")**, **register()** the sender device by calling **new MeshbluHttp({uuid: sender.uuid, token: sender.token})**, and send a message from the sender device, as follows:
 ```
 senderDevice.message({devices: ['*'], payload: "Hello World"})
 ```

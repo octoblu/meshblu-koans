@@ -15,7 +15,7 @@ var broadcastReceivedSubscription = {
 
 5) In the callback of createSubscription(), call subscriptions() with the uuid
 
-6) In the callback of subscriptions(), **console.log response[0].type**
+6) In the callback of subscriptions(), **console.log(response[0].type)**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params

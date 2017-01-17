@@ -10,7 +10,7 @@
 
 4) From inside the callback of **register()**, **get** your device with **whoami()**
 
-5) In the callback, **console.log response.type**
+5) In the callback, **console.log(response.type)**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params

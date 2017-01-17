@@ -6,7 +6,7 @@
 
 4) Create a new token with **generateAndStoreToken()**
 
-5) In the callback, **console.log response.hasOwnProperty("uuid")**, **response.hasOwnProperty("token")**, and **response.hasOwnProperty("createdAt")**
+5) In the callback, **console.log(response.hasOwnProperty("uuid"))**, **console.log(response.hasOwnProperty("token"))**, and **console.log(response.hasOwnProperty("createdAt"))**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params

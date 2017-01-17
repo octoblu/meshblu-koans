@@ -4,7 +4,7 @@
 
 5) **Get** your subscriptions by calling subscriptions()
 
-6) In the callback of subscriptions(), **console.log response**
+6) In the callback of subscriptions(), **console.log(response)**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params
