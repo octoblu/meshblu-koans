@@ -2,7 +2,8 @@
 
 2) **register()** a new device with Meshblu with the callback **function(error, receiver)**
 
-3) Create a receiver device by calling new meshblu-http with the uuid and token of the response
+3) Create a receiver device by calling new meshblu-http with the uuid and
+  token of the response
 
 4) Create a new object, which we will use to register a sender device:
 ```
@@ -18,7 +19,8 @@ var registerSender = {
 }
 ```
 
-5) **register()** a new device with registerSender as the first parameter and the callback **function(error, sender)**
+5) **register()** a new device with registerSender as the first parameter
+  and the callback **function(error, sender)**
 
 6) Create a new object, which we will use for creating a subscription:
 ```
@@ -55,11 +57,15 @@ var meshbluFirehose = new MeshbluFirehose({
 })
 ```
 
-11) Now you can set **meshbluFirehose.on('message', function(message))** to contain **console.log("Received a message: " + message.data.payload)** and **meshbluFirehose.close(function(error){})** as part of the callback
+11) Now you can set **meshbluFirehose.on('message', function(message))** to
+  contain **console.log("Received a message: " + message.data.payload)** and
+  **meshbluFirehose.close(function(error){})** as part of the callback
 
 12) Finally, we can call **meshbluFirehose.connect()** with a callback **function(error)**
 
-13) In the callback, **console.log("Connected")**, **register()** the sender device by calling **new MeshbluHttp({uuid: sender.uuid, token: sender.token})**, and send a message from the sender device, as follows:
+13) In the callback, **console.log("Connected")**, **register()** the sender device
+  by calling **new MeshbluHttp({uuid: sender.uuid, token: sender.token})**, and
+  send a message from the sender device, as follows:
 ```
 senderDevice.message({devices: ['*'], payload: "Hello World"})
 ```
@@ -69,7 +75,8 @@ senderDevice.message({devices: ['*'], payload: "Hello World"})
 
 -- You should install/require meshblu-firehose-socket-io
 
--- After you register a new device, you should create a new meshblu-http instance, with an object containing the response uuid and token
+-- After you register a new device, you should create a new meshblu-http instance, with an object
+  containing the response uuid and token (var device = new Meshblu({"uuid": uuid, "token": token}))
 
 -- createSubscription() has two params: options and a callback function(error)
 

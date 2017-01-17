@@ -6,11 +6,14 @@
 
 4) Create a new token with **generateAndStoreToken()**
 
-5) In the callback, **console.log(response.hasOwnProperty("uuid"))**, **console.log(response.hasOwnProperty("token"))**, and **console.log(response.hasOwnProperty("createdAt"))**
+5) In the callback, **console.log(response.hasOwnProperty("uuid"))**,
+  **console.log(response.hasOwnProperty("token"))**, and
+  **console.log(response.hasOwnProperty("createdAt"))**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params
 
--- After you register a new device, you should create a new meshblu-http instance, with an object containing the response uuid and token
+-- After you register a new device, you should create a new meshblu-http instance, with an object
+  containing the response uuid and token (var device = new Meshblu({"uuid": uuid, "token": token}))
 
 -- generateAndStoreToken() has two params: uuid and a callback function(error, response)
