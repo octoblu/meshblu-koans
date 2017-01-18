@@ -11,18 +11,14 @@ var broadcastReceivedSubscription = {
 }
 ```
 
-4) Create the subscription by calling createSubscription() with the options
+4) Create the subscription by calling **createSubscription(options, function(error){})**
 
-5) In the callback of createSubscription(), call subscriptions() with the uuid
+5) In the callback of **createSubscription()**, call **subscriptions(uuid, function(error, response){})**
 
-6) In the callback of subscriptions(), **console.log(response[0].type)**
+6) In the callback of **subscriptions()**, **console.log(response[0].type)**
 
 # Hints
 -- You should install/require meshblu-http and create a new meshblu-http instance, with no params
 
 -- After you register a new device, you should create a new meshblu-http instance, with an object
   containing the response uuid and token (var device = new Meshblu({"uuid": uuid, "token": token}))
-
--- createSubscription() has two params: options and a callback function(error)
-
--- subscriptions() has two params: uuid and a callback function(error, response)
