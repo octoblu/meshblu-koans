@@ -1,16 +1,14 @@
 1) Create a new file called **program.js**, then install/require 'meshblu-http'
+  and create a new instance ( `var meshblu = new Meshblu()` )
 
-2) **register()** a new device with Meshblu
+2) **register(properties, function(error, response){})** a new device with Meshblu, then in the
+  callback, claim your new device ( `var device = new Meshblu({ 'uuid': uuid, 'token': token })` )
 
-3) Reset the token of your device with **resetToken()**
+3) In the callback, reset the token of your device by calling **resetToken(uuid, function(error, response){})**
 
-4) In the callback, **console.log(response.hasOwnProperty("uuid"))** and
-  **console.log(response.hasOwnProperty("token"))**
+4) In the callback of **resetToken()**, **console.log(response.hasOwnProperty('uuid'))** and
+  **console.log(response.hasOwnProperty('token'))**
 
-# Hints
--- You should install/require meshblu-http and create a new meshblu-http instance, with no params
+### Hints
 
--- After you register a new device, you should create a new meshblu-http instance, with an object
-  containing the response uuid and token (var device = new Meshblu({"uuid": uuid, "token": token}))
-
--- resetToken() has two params: uuid and a callback function(error, response)
+- You should call resetToken() on your claimed meshblu-http instance

@@ -1,15 +1,15 @@
 1) Create a new file called **program.js**, then install/require 'meshblu-http'
+  and create a new instance ( `var meshblu = new Meshblu()` )
 
-2) **register()** a new device with Meshblu
+2) **register(properties, function(error, response){})** a new device with Meshblu, then in the
+  callback, claim your new device ( `var device = new Meshblu({ 'uuid': uuid, 'token': token })` )
 
-3) Then get your devices with **mydevices()**
+3) In the callback of **register()**, **get** your devices with **mydevices(query, function(error, response){})**
 
-4) In the callback, **console.log(response)**
+4) In the callback **mydevices()**, **console.log(response)**
 
-# Hints
--- You should install/require meshblu-http and create a new meshblu-http instance, with no params
+### Hints
 
--- After you register a new device, you should create a new meshblu-http instance, with an object
-  containing the response uuid and token (var device = new Meshblu({"uuid": uuid, "token": token}))
+ - You should call mydevices() on your claimed meshblu-http instance
 
--- mydevices() has two params: query object and a callback function(error, response)
+- Your first parameter to mydevices() can just be an empty object: `{}`

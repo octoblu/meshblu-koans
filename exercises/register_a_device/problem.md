@@ -1,18 +1,15 @@
 1) Create a new file called **program.js**, then install/require 'meshblu-http'
 
-2) **register()** a new device with Meshblu
+2) Create a new meshblu-http instance with no params: `var meshblu = new Meshblu()`
 
-3) Your device should contain the additional properties:
-```
-"type": "drone"
-"color": "black"
-```
+3) **register(properties, function(error, response){})** a new device with Meshblu
 
-4) In the callback, **console.log(response.type)** and **console.log(response.color)**
+4) Your new device should contain the additional properties:
 
-# Hints
--- You should install/require meshblu-http and create a new meshblu-http instance, with no params
+  `{ 'type': 'drone', 'color': 'black' }`
 
--- You can then call register() on your meshblu-http instance
+5) In the callback, **console.log(response.type)** and **console.log(response.color)**
 
--- register() takes two params: an object with device properties and a callback function(error, response)
+### Hints
+
+- You should call register() on your new meshblu-http instance

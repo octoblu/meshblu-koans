@@ -1,19 +1,21 @@
 1) Create a new file called **program.js**, then install/require 'meshblu-http'
+  and create a new instance ( `var meshblu = new Meshblu()` )
 
-2) **register()** a new device with Meshblu
+2) **register(properties, function(error, response){})** a new device with Meshblu, then in the
+  callback, claim your new device ( `var device = new Meshblu({ 'uuid': uuid, 'token': token })` )
 
-3) Revoke the token of your device with **revokeToken()**
+3) In the callback, revoke the token with **revokeToken(uuid, token, function(error, response){})**
 
-4) Create a new token with **generateAndStoreToken()**
+4) In the callback of **revokeToken()** you need to **console.log(response)**
 
-5) In the callback, **console.log(response.hasOwnProperty("uuid"))**,
-  **console.log(response.hasOwnProperty("token"))**, and
-  **console.log(response.hasOwnProperty("createdAt"))**
+5) Then create a new token with **generateAndStoreToken(uuid, function(error, response){})**
 
-# Hints
--- You should install/require meshblu-http and create a new meshblu-http instance, with no params
+6) In the callback of **generateAndStoreToken()**, **console.log(response.hasOwnProperty('uuid'))**,
+  **console.log(response.hasOwnProperty('token'))** and **console.log(response.hasOwnProperty('createdAt'))**
 
--- After you register a new device, you should create a new meshblu-http instance, with an object
-  containing the response uuid and token (var device = new Meshblu({"uuid": uuid, "token": token}))
+### Hints
 
--- generateAndStoreToken() has two params: uuid and a callback function(error, response)
+ - You should call revokeToken() and generateAndStoreToken() on your claimed meshblu-http instance
+
+- In the callback of register(), you should assign the uuid to a variable so that
+- you can use it from within other callbacks: `var uuid = response.uuid`

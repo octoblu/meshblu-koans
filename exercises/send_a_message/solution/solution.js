@@ -25,7 +25,7 @@ meshbluHttp.register({}, function(error, receiver) {
     }
 
     receiverDevice.createSubscription(broadcastReceivedSubscription, function(error) {
-      console.log("Receive subscription created")
+      console.log('Receive subscription created')
 
       var broadcastSentSubscription = {
         emitterUuid: sender.uuid,
@@ -34,7 +34,7 @@ meshbluHttp.register({}, function(error, receiver) {
       }
 
       receiverDevice.createSubscription(broadcastSentSubscription, function(error) {
-        console.log("Sent subscription created")
+        console.log('Sent subscription created')
 
         var meshbluFirehose = new MeshbluFirehose({
           meshbluConfig: {
@@ -47,17 +47,17 @@ meshbluHttp.register({}, function(error, receiver) {
         })
 
         meshbluFirehose.on('message', function(message) {
-          console.log("Received a message: " + message.data.payload)
+          console.log('Received a message: ' + message.data.payload)
 
           meshbluFirehose.close(function(error){})
         })
 
         meshbluFirehose.connect(function(error) {
-          console.log("Connected")
+          console.log('Connected')
 
           var senderDevice = new MeshbluHttp({uuid: sender.uuid, token: sender.token})
 
-          senderDevice.message({devices: ['*'], payload: "Hello World"})
+          senderDevice.message({devices: ['*'], payload: 'Hello World'})
         })
       })
     })

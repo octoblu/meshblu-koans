@@ -1,18 +1,21 @@
 1) Create a new file called **program.js**, then install/require 'meshblu-http'
+  and create a new instance ( `var meshblu = new Meshblu()` )
 
-2) **register()** a new device with Meshblu, containing the additional property:
-```
-"type": "awesome-device"
-```
+2) **register(properties, function(error, response){})** a new device with Meshblu
 
-3) Once you register a new device, from the callback, you should create a new meshblu-http
-    instance with an object containing the response.uuid and response.token
+3) Your new device should contain the additional property:
 
-4) From inside the callback of **register()**, **get** your device with **whoami()**
+  `{ 'type': 'awesome-device' }`
 
-5) In the callback, **console.log(response.type)**
+4) In the callback of **register()**, you should claim your new device by creating
+  a new meshblu-http instance and passing it an object containing the uuid and token:
 
-# Hints
--- You should install/require meshblu-http and create a new meshblu-http instance, with no params
+  `var device = new Meshblu({ 'uuid': response.uuid, 'token': response.token })`
 
--- whoami() has one param: a callback function(error, response)
+5) Now you can **get** your device with **whoami(function(error, response){})**
+
+6) In the callback, **console.log(response.type)**
+
+### Hints
+
+- You should call whoami() on your claimed meshblu-http instance

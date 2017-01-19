@@ -1,9 +1,11 @@
 1) Create a new file called **program.js**, then install/require 'meshblu-http'
+  and create a new instance ( `var meshblu = new Meshblu()` )
 
-2) **register()** a new device with Meshblu
+2) **register(properties, function(error, response){})** a new device with Meshblu, then in the
+  callback, claim your new device ( `var device = new Meshblu({ 'uuid': uuid, 'token': token })` )
 
-3) Create a new object, containing the options for the subscription:
-```
+3) In the callback of **register()**, create a new object, containing the options for the subscription:
+```javascript
 var broadcastReceivedSubscription = {
   emitterUuid: response.uuid,
   subscriberUuid: response.uuid,
@@ -11,24 +13,23 @@ var broadcastReceivedSubscription = {
 }
 ```
 
-4) Create the subscription by calling createSubscription() with the options
+4) Now create the subscription by calling **createSubscription(options, function(error){})**
 
-5) In the callback of createSubscription(), call subscriptions() with the uuid
+5) In the callback of **createSubscription()**, call **subscriptions(uuid, function(error, response){})**
 
-6) In the callback of subscriptions(), **console.log(response[0].type)**
+6) In the callback of **subscriptions()**, **console.log(response[0].type)**
 
-7) Call deleteSubscription() with the subscription options object defined earlier
+7) Now call **deleteSubscription(sub_to_delete, function(error, response){})** with the subscription
+  options object that you defined in step 3
 
-8) Call subscriptions() and in the callback, **console.log(response)**
+8) In the callback of **deleteSubscription()**, call **subscriptions(uuid, function(error, response){})**
 
-# Hints
--- You should install/require meshblu-http and create a new meshblu-http instance, with no params
+9) In the callback of **subscriptions()**, **console.log(response)**
 
--- After you register a new device, you should create a new meshblu-http instance, with an object
-  containing the response uuid and token (var device = new Meshblu({"uuid": uuid, "token": token}))
+### Hints
 
--- createSubscription() has two params: options and a callback function(error)
+ - You should call createSubscription(), subscriptions(), and deleteSubscription()
+ - on your claimed meshblu-http instance
 
--- subscriptions() has two params: uuid and a callback function(error, response)
-
--- deleteSubscription() has two params: options and a callback function(error)
+- In the callback of register(), you should assign the uuid to a variable so that
+- you can use it from within other callbacks: `var uuid = response.uuid`

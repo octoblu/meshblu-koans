@@ -8,11 +8,12 @@ meshbluHttp.register({}, function(error, response) {
   var device = new MeshbluHttp({uuid: uuid, token: response.token})
 
   device.revokeToken(uuid, response.token, function(error, response) {
+    console.log(response)
 
     device.generateAndStoreToken(uuid, function(error, response) {
-      console.log(response.hasOwnProperty("uuid"))
-      console.log(response.hasOwnProperty("token"))
-      console.log(response.hasOwnProperty("createdAt"))
+      console.log(response.hasOwnProperty('uuid'))
+      console.log(response.hasOwnProperty('token'))
+      console.log(response.hasOwnProperty('createdAt'))
     })
   })
 })
