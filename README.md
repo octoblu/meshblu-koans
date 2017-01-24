@@ -6,7 +6,7 @@ If you would like to read more about Meshblu, [click here](https://meshblu.readm
 ## Usage
 To use meshblu-koans, you will need to have [Node.js](https://nodejs.org/en/) installed
 
-#### Install:
+### Install:
 ```
 npm install --global meshblu-koans
 ```
@@ -20,7 +20,7 @@ npm init
 touch program.js
 ```
 
-#### Run:
+### Run:
 ```
 meshblu-koans
 ```
@@ -45,4 +45,4 @@ Here's what you can expect to learn from meshblu-koans:
 ## Meshblu Functions
 All of the lessons use [meshblu-http](https://www.npmjs.com/package/meshblu-http)
 
-The final lesson also uses [meshblu-firehose-socket.io](https://www.npmjs.com/package/meshblu-firehose-socket.io) to send/receive messages
+The final lesson also uses [meshblu-firehose-socket.io](https://www.npmjs.com/package/meshblu-firehose-socket.io) to send and receive messages
