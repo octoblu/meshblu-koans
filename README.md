@@ -1,5 +1,5 @@
 ## Meshblu Koans...
-is a collection of lessons to help you learn more about Meshblu. Start your journey towards machine-to-machine instant-messaging enlightenment today!
+...is a collection of lessons to help you learn more about Meshblu. Start your journey towards machine-to-machine instant-messaging enlightenment today!
 
 If you would like to read more about Meshblu, [click here](https://meshblu.readme.io/)
 
