@@ -43,6 +43,8 @@ Here's what you can expect to learn from meshblu-koans:
 - Send a Message
 
 ## Meshblu Functions
+For more information about how to use specific functions for each lesson, refer to the docs below...
+
 All of the lessons use [meshblu-http](https://www.npmjs.com/package/meshblu-http)
 
 The final lesson also uses [meshblu-firehose-socket.io](https://www.npmjs.com/package/meshblu-firehose-socket.io) to send and receive messages
