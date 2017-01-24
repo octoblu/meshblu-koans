@@ -26,6 +26,8 @@ meshblu-koans
 ```
 
 ## Current Lessons
+Here's what you can expect to learn from meshblu-koans:
+
 - Register a Device
 - Get Current Device
 - Update a Device
