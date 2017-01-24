@@ -39,3 +39,6 @@ meshblu-koans
 - Delete Subscription
 - Send a Message
 
+## Meshblu Functions
+All of the lessons use [meshblu-http](https://www.npmjs.com/package/meshblu-http)
+The final lesson also uses [meshblu-firehose-socket.io](https://www.npmjs.com/package/meshblu-firehose-socket.io) to send messages
