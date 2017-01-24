@@ -12,6 +12,7 @@ npm install --global meshblu-koans
 ```
 
 Before you run meshblu-koans, you should:
+
 ```
 mkdir temp
 cd temp
@@ -42,4 +43,4 @@ meshblu-koans
 ## Meshblu Functions
 All of the lessons use [meshblu-http](https://www.npmjs.com/package/meshblu-http)
 
-The final lesson also uses [meshblu-firehose-socket.io](https://www.npmjs.com/package/meshblu-firehose-socket.io) to send messages
+The final lesson also uses [meshblu-firehose-socket.io](https://www.npmjs.com/package/meshblu-firehose-socket.io) to send/receive messages
