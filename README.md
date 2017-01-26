@@ -28,43 +28,43 @@ meshblu-koans
 ## Current Lessons
 Here's what you can expect to learn from meshblu-koans:
 
-#### Register a Device
+### > Register a Device
 Everything in Meshblu is a device, including users, services, etc. This lesson will walk you through creating a new device.
 
-#### Get Current Device
+### > Get Current Device
 This lesson will walk you through retrieving device information.
 
-#### Update a Device
+### > Update a Device
 
 
-#### Unregister a Device
+### > Unregister a Device
 
 
-#### My Devices
+### > My Devices
 
 
-#### Reset Token
+### > Reset Token
 
 
-#### Revoke Token
+### > Revoke Token
 
 
-#### Generate Token
+### > Generate Token
 
 
-#### Search for Device
+### > Search for Device
 
 
-#### Get Subscriptions
+### > Get Subscriptions
 
 
-#### Create Subscription
+### > Create Subscription
 
 
-#### Delete Subscription
+### > Delete Subscription
 
 
-#### Send a Message
+### > Send a Message
 
 
 
