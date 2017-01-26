@@ -28,12 +28,11 @@ meshblu-koans
 ## Current Lessons
 Here's what you can expect to learn from meshblu-koans:
 
-- Register a Device
+- # Register a Device
 
-  * Everything in Meshblu is a device, including users, services, etc.
-  * This lesson will walk you through creating a new device.
+Everything in Meshblu is a device, including users, services, etc. This lesson will walk you through creating a new device.
 
-- ### Get Current Device
+- ## Get Current Device
 
 hello world
 
